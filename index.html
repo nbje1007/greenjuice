@@ -16,12 +16,25 @@
     <link rel="stylesheet" href="js/swiper/swiper.min.css">
     <script src="js/swiper/swiper.min.js"></script>
 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
 
 <body>
+    <div class="modal">
+        <div class="modal-cont">
+            <p>이사이트는 크롬에 최적화 되어 있습니다.<br>
+                <br>
+                곽혜영 개인 포트폴리오 제작용 입니다.
+            </p>
+            <button class="modal-close">
+                <i class="fas fa-window-close"></i>
+            </button>
+        </div>
+    </div>
     <!-- 위로가기 -->
     <div class="fix">
         <div class="container">
@@ -84,7 +97,47 @@
                 <p class="customer-tit">고객님 안녕하세요!</p>
                 <div class="customer-wrap clearfix">
                     <div class="customer-slide left">
-
+                        <div class="swiper-container sw-cs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="">
+                                        <span class="cs-icon cs-icon-1"></span>
+                                        음용내용
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="">
+                                        <span class="cs-icon cs-icon-2"></span>
+                                        음용제품변경
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="">
+                                        <span class="cs-icon cs-icon-3"></span>
+                                        찜한제품
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="">
+                                        <span class="cs-icon cs-icon-4"></span>
+                                        고객번호등록/찾기
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="">
+                                        <span class="cs-icon cs-icon-5"></span>
+                                        스마트청구서
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="">
+                                        <span class="cs-icon cs-icon-6"></span>
+                                        배달건너뛰기
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination sw-cs-pg"></div>
                     </div>
                     <div class="customer-login right">
                         지금 로그인하여 <b>맞춤 제품을</b><br>
@@ -285,7 +338,7 @@
         <!-- 배너 2 영역 -->
         <section class="banner-2">
             <!-- 배너2 슬라이드 -->
-            <div class="swiper-container">
+            <div class="swiper-container sw-banner2">
                 <!-- 슬라이드 내용들 -->
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">

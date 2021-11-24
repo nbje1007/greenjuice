@@ -37,7 +37,47 @@ body {
     letter-spacing: -0.05rem;
     background-color: #f3f3f3;
 }
+/* 모달창 */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+}
 
+.modal-cont {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 14px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    background-color: #fff;
+}
+
+.modal-cont p {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 0;
+    background-color: #fff;
+    color: #999;
+    font-size: 20px;
+    cursor: pointer;
+}
+.modal-close:hover {
+       color: #333;
+}
 /* 공통 클래스 */
 .container {
     position: relative;
@@ -344,8 +384,77 @@ body {
     display: block;
     width: 46rem;
     height: 10rem;
+    /* overflow: hidden; */
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.sw-cs {}
+
+.sw-cs a {
+    display: block;
+    height: 100%;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.cs-icon {
+    display: block;
+    width: 4.6rem;
+    height: 4.6rem;
+    margin: 0 auto;
+    background: url('../images/ico_sprite_pc.png')no-repeat;
     overflow: hidden;
-    background-color: #8fcb64;
+    margin: 1.5rem auto;
+}
+
+.cs-icon-1 {
+    background-position: -1.5rem -8.5rem;
+}
+
+.cs-icon-2 {
+    background-position: -7rem -8.5rem;
+}
+
+.cs-icon-3 {
+    width: 4rem;
+    background-position: -12.1rem -8.5rem;
+}
+
+.cs-icon-4 {
+    width: 4rem;
+    background-position: -17.5rem -8.5rem;
+}
+
+.cs-icon-5 {
+    background-position: -57.1rem -8.5rem;
+}
+
+.cs-icon-6 {
+    width: 4.5rem;
+    background-position: -62rem -8.5rem;
+}
+
+.sw-cs-pg {
+    top: -1.8rem;
+    right: 0;
+}
+
+.sw-cs-pg .swiper-pagination-bullet {
+    background-color: #ddd !important;
+    opacity: 1.0 !important;
+    margin: 0 3px !important;
+}
+
+.sw-cs-pg .swiper-pagination-bullet-active {
+    background-color: #47ad1a !important;
 }
 
 .customer-login {
